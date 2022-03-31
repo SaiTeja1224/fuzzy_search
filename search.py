@@ -9,7 +9,7 @@ with open("cricket.ini","r") as file:
     country = input("Please enter your desired Cricketing Country : ")
     search_query = input("Please enter the search term: ")
     for k,v in parser.items(sect[0]):
-        if v == country:
+        if v.lower() == country.lower():
             intermediate_result.append(k)
 
 
